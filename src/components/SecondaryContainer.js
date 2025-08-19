@@ -3,7 +3,7 @@ import MovieList from './MovieList';
 
 const SecondaryContainer = () => {
   const movies = useSelector((store) => store.movies);
-  console.log("POPULAR", movies.popularMovies);
+  //console.log("POPULAR", movies.popularMovies);
   if (!movies.nowPlayingMovies || !movies.popularMovies) {
     return null;
   }
